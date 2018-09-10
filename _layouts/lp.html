@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  {% include ga.html %}
+  <body>
+    <!-- landing page navigation removes all links except to home -->
+    {% include lp-nav.html %}
+    {{content}}
+    {% include footer.html %}
+  </body>
+  {% include scripts.html %}
+</html>

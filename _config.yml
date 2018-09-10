@@ -1,0 +1,7 @@
+collections:
+  lps:
+    output: true
+    permalink: /:collection/:name
+
+gems:
+  - jekyll-archives
