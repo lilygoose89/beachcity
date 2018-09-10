@@ -13,7 +13,9 @@ img {
   margin: 0;
   padding: 0;
 }
-
+section {
+  padding: 5% 25%;
+}
 @media all and (max-width:1024px) {
 
 }
@@ -25,18 +27,42 @@ img {
 }
 
 /* typography ----------------------------------------- */
-h1,h2,h3,h4 {
+h1{
   font-family: 'Lato', sans-serif;
+  font-size: 4.5em;
+  color: white;
 }
-p,h5,h6,li {
+h2{
+  font-family: 'Lato', sans-serif;
+  color: #40565e;
+}
+h3 {
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
+  font-size: 1.2em;
+  color: #566266;
+}
+h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
  }
+ p,li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  color: #707070;
+  }
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
+}
+.text-blue {
+  color: ##07b2e5;
+}
+.text-grey {
+  color: #707070;
+}
+.text-bold {
+  font-weight: bolder;
 }
 @media all and (max-width:768px) {
   .text-center-mobile {
@@ -44,17 +70,50 @@ p,h5,h6,li {
   }
 }
 /* link and button styles ----------------------------------------- */
-
+button {
+  background-color: #07b2e5;
+  border: solid #07b2e5 1px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5px;
+  border-radius: 45px;
+  padding: 1% 3%;
+  font-size: 16px;
+  -webkit-transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+button:hover {
+  transform: scale(1.1);
+}
 /* container styles ----------------------------------------- */
-
+.bg-blue {
+  background-color: #d9f2fa;
+}
+.triangle-white {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 100px;
+  border-color: white transparent transparent transparent;
+  position: relative;
+  top: -14px;
+}
+.triangle-blue {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 100px;
+  border-color: #d9f2fa transparent transparent transparent;
+  position: relative;
+  top: -14px;
+}
 /* header and nav styles ----------------------------------------- */
 .logo-container {
   position: absolute;
-  top: 18px;
-  left: 95px;
+  top: 20px;
 }
 /* footer styles ----------------------------------------- */
-footer p, footer a {
+footer h6, footer a {
   color: white;
   font-weight: 300;
   font-size: 0.7em;
@@ -74,7 +133,12 @@ footer p, footer a {
   min-height: 100vh;
   overflow-y: hidden;
 }
+.title-container {
 
+}
+.lp-icon-container {
+  width: 300px;
+}
 /* helpers ----------------------------------------- */
 @media all and (max-width:768px) {
   .text-center-mobile {
