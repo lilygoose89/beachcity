@@ -7,7 +7,7 @@ img {
   height: auto;
 }
 
-/* layout ----------------------------------------- */
+/* layout and container styles ----------------------------------------- */
 /* add because gridlex "bumps" the page layout beyond 100vw and causes "wiggle" in mobile */
 [class*=grid-],[class*=grid_],[class~=grid] {
   margin: 0;
@@ -16,14 +16,60 @@ img {
 section {
   padding: 5% 25%;
 }
+.bg-blue {
+  background-color: #d9f2fa;
+}
+.triangle-white {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 100px;
+  border-color: white transparent transparent transparent;
+  position: relative;
+  top: -26px;
+}
+.triangle-blue {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 100px;
+  border-color: #d9f2fa transparent transparent transparent;
+  position: relative;
+  top: -26px;
+}
+@media all and (max-width:1800px) {
+  .triangle-white {
+    top: -12px;
+  }
+  .triangle-blue {
+    top: -12px;
+  }
+}
 @media all and (max-width:1024px) {
-
+  .triangle-white {
+    top: 2px;
+  }
+  .triangle-blue {
+    top: 2px;
+  }
 }
 @media all and (max-width:768px) {
-
+  section {
+    padding: 5% 15%;
+  }
+  .triangle-white {
+    border-width: 50px 50px 0 50px;
+    top: 12px;
+  }
+  .triangle-blue {
+    border-width: 50px 50px 0 50px;
+    top: 12px;
+  }
 }
 @media all and (max-width:576px) {
-
+  section {
+    padding: 7.5%;
+  }
 }
 
 /* typography ----------------------------------------- */
@@ -64,9 +110,20 @@ h4,h5,h6 {
 .text-bold {
   font-weight: bolder;
 }
+@media all and (max-width:1024px) {
+
+}
 @media all and (max-width:768px) {
+  h1 {
+    font-size: 3.5em;
+  }
   .text-center-mobile {
-  text-align: center;
+    text-align: center;
+  }
+}
+@media all and (max-width:576px) {
+  h1 {
+    font-size: 2em;
   }
 }
 /* link and button styles ----------------------------------------- */
@@ -84,28 +141,6 @@ button {
 }
 button:hover {
   transform: scale(1.1);
-}
-/* container styles ----------------------------------------- */
-.bg-blue {
-  background-color: #d9f2fa;
-}
-.triangle-white {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 100px 100px 0 100px;
-  border-color: white transparent transparent transparent;
-  position: relative;
-  top: -14px;
-}
-.triangle-blue {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 100px 100px 0 100px;
-  border-color: #d9f2fa transparent transparent transparent;
-  position: relative;
-  top: -14px;
 }
 /* header and nav styles ----------------------------------------- */
 .logo-container {
