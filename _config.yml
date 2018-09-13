@@ -3,5 +3,18 @@ collections:
     output: true
     permalink: /:collection/:name
 
-gems:
-  - jekyll-archives
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: BeachCity Media
+author:
+  name: BeachCity Media
+  email:
+  twitter: beachcity_life
+social:
+  name: BeachCity Media
+  links:
+    - info.beachcity.com.au
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
