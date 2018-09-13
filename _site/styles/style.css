@@ -39,10 +39,10 @@ section {
 }
 @media all and (max-width:1800px) {
   .triangle-white {
-    top: -12px;
+    top: -13px;
   }
   .triangle-blue {
-    top: -12px;
+    top: -13px;
   }
 }
 @media all and (max-width:1024px) {
@@ -101,8 +101,11 @@ h4,h5,h6 {
 .text-right {
   text-align: right;
 }
+.text-white {
+  color: white;
+}
 .text-blue {
-  color: ##07b2e5;
+  color: #07b2e5;
 }
 .text-grey {
   color: #707070;
@@ -127,6 +130,12 @@ h4,h5,h6 {
   }
 }
 /* link and button styles ----------------------------------------- */
+a {
+  color: inherit;
+}
+a:hover {
+  color: #07b2e5;
+}
 button {
   background-color: #07b2e5;
   border: solid #07b2e5 1px;
@@ -174,6 +183,24 @@ footer h6, footer a {
 .lp-icon-container {
   width: 300px;
 }
+/* home and 404 ----------------------------------------- */
+.bg-home {
+  background: linear-gradient(rgba(6, 29, 92,0.1), rgba(6, 29, 92,0.3)), url('/images/beach.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+.bg-404 {
+  background: linear-gradient(rgba(6, 29, 92,0.1), rgba(6, 29, 92,0.3)), url('/images/puzzle.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
 /* helpers ----------------------------------------- */
 @media all and (max-width:768px) {
   .text-center-mobile {
