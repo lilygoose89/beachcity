@@ -200,6 +200,15 @@ footer h6, footer a {
   min-height: 100vh;
   overflow-y: hidden;
 }
+/* job page styles */
+.bg-half-height {
+  background: linear-gradient(rgba(6, 29, 92,0.4), rgba(6, 29, 92,0.4)), url('/images/presenter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  overflow-y: hidden;
+}
 
 /* helpers ----------------------------------------- */
 @media all and (max-width:768px) {
