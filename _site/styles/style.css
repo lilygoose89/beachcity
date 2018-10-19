@@ -15,9 +15,13 @@ img {
 }
 section {
   padding: 5% 25%;
+  background-color: #FAF8F8;
 }
 .bg-blue {
   background-color: #d9f2fa;
+}
+.bg-trans-blue {
+  background-color: rgba(6, 29, 92,0.2)
 }
 .triangle-white {
   width: 0;
@@ -80,12 +84,12 @@ h1{
 }
 h2{
   font-family: 'Lato', sans-serif;
-  color: #40565e;
+  color: #454545;
 }
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
-  color: #566266;
+  color: #454545;
 }
 h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
@@ -112,6 +116,12 @@ h4,h5,h6 {
 }
 .text-bold {
   font-weight: bolder;
+}
+.text-i {
+  font-style: italic;
+}
+.text-caps {
+  text-transform: uppercase;
 }
 @media all and (max-width:1024px) {
 
@@ -152,9 +162,25 @@ button:hover {
   transform: scale(1.1);
 }
 /* header and nav styles ----------------------------------------- */
-.logo-container {
+/* .logo-container {
   position: absolute;
   top: 20px;
+} */
+nav {
+  position: fixed;
+  z-index: 99;
+  background: white;
+  width: 100%;
+}
+nav p , nav a{
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #454545;
+  -webkit-transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+nav a:hover {
+  transform: scale(1.1);
 }
 /* footer styles ----------------------------------------- */
 footer h6, footer a {
@@ -183,7 +209,11 @@ footer h6, footer a {
 .lp-icon-container {
   width: 300px;
 }
-/* home and 404 ----------------------------------------- */
+/* home  ----------------------------------------- */
+#hero {
+  position: relative;
+  z-index: 999;
+}
 .bg-home {
   background: linear-gradient(rgba(6, 29, 92,0.1), rgba(6, 29, 92,0.3)), url('/images/beach.jpg');
   background-repeat: no-repeat;
@@ -192,6 +222,15 @@ footer h6, footer a {
   min-height: 100vh;
   overflow-y: hidden;
 }
+.text-bg-blue span {
+  background-color: #07b2e5;
+  color: white;
+  display: inline;
+  padding: 0.3% 1%;
+}
+
+/* 404 */
+
 .bg-404 {
   background: linear-gradient(rgba(6, 29, 92,0.1), rgba(6, 29, 92,0.3)), url('/images/puzzle.jpg');
   background-repeat: no-repeat;
