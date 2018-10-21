@@ -14,11 +14,17 @@ img {
   padding: 0;
 }
 section {
-  padding: 5% 25%;
+  padding: 5% 15%;
   background-color: #FAF8F8;
+}
+.reading-width {
+  padding: 5% 25%;
 }
 .bg-blue {
   background-color: #d9f2fa;
+}
+.bg-white {
+  background-color: white;
 }
 .bg-trans-blue {
   background-color: rgba(6, 29, 92,0.2)
@@ -28,7 +34,7 @@ section {
   height: 0;
   border-style: solid;
   border-width: 100px 100px 0 100px;
-  border-color: white transparent transparent transparent;
+  border-color: #FAF8F8 transparent transparent transparent;
   position: relative;
   top: -26px;
 }
@@ -40,6 +46,22 @@ section {
   border-color: #d9f2fa transparent transparent transparent;
   position: relative;
   top: -26px;
+}
+/* for youtube embed */
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0;
+overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 @media all and (max-width:1800px) {
   .triangle-white {
@@ -91,9 +113,13 @@ h3 {
   font-size: 1.2em;
   color: #454545;
 }
-h4,h5,h6 {
+h4 {
   font-family: 'Montserrat', sans-serif;
+  color: #07b2e5;
  }
+h5,h6 {
+ font-family: 'Montserrat', sans-serif;
+}
  p,li {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
@@ -122,6 +148,9 @@ h4,h5,h6 {
 }
 .text-caps {
   text-transform: uppercase;
+}
+.text-small {
+  font-size: 1em;
 }
 @media all and (max-width:1024px) {
 
@@ -169,7 +198,6 @@ button:hover {
 nav {
   position: fixed;
   z-index: 99;
-  background: white;
   width: 100%;
 }
 nav p , nav a{
@@ -228,6 +256,16 @@ footer h6, footer a {
   display: inline;
   padding: 0.3% 1%;
 }
+/* about page */
+.bg-about {
+  background: linear-gradient(rgba(6, 29, 92,0.1), rgba(6, 29, 92,0.3)), url('/images/BeachCity-Media-Collage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
 
 /* 404 */
 
