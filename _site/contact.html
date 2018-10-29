@@ -31,12 +31,12 @@
 
   <body>
     <!-- main nav -->
-<nav id="top" class="grid-middle-spaceBetween bg-white">
-  <div class="pad-top-xs col-2">
+<nav id="top" class="nav grid-middle-spaceBetween bg-white">
+  <div class="pad-top-xs col-2_md-4">
     <a href="/" ><img src="/images/beachcity-logo-dark.png"/></a>
   </div>
-  <div class="col-5 grid-spaceBetween pad-all-xs">
-    <a href="/stories"><p>Stories We've Told</p></a>
+  <div class="col-4_md-5 grid-spaceBetween pad-all-xs hide-mobile">
+    <!-- <a href="/stories"><p>Stories We've Told</p></a> -->
     <a href="/services"><p>What We Do</p></a>
     <a href="/about"><p>Who We Are</p></a>
     <a href="/contact"><p>Talk to Us</p></a>
@@ -54,34 +54,90 @@
 </nav> -->
 
 <!-- mobile nav menu -->
-<!-- <nav id="mobile-menu">
+<nav id="mobile-menu">
   <div class="pad-top-m pad-bottom-s">
     <a href="#" class="toggle-mobile-menu">
       <i class="fa fa-times" aria-hidden="true"></i>
     </a>
   </div>
-  <a href=""><p></p></a>
-  <a href=""><p></p></a>
-  <a href=""><p></p></a>
-  <div class="grid-middle-spaceBetween margin-left-l margin-right-l pad-top-s">
+  <a href="/services"><p>What We Do</p></a>
+  <a href="/about"><p>Who We Are</p></a>
+  <a href="/contact"><p>Talk to Us</p></a>
+  <!-- <div class="grid-middle-spaceBetween margin-left-l margin-right-l pad-top-s">
     <a href="" target=blank class=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
     <a href="" target=blank class=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
     <a href="" target=blank class=""><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-  </div>
-</nav> -->
+  </div> -->
+</nav>
 
 <!-- scroll to top container (floats near the bottom right) -->
 <!-- <a href="#top" class="scroll-to-top-container"><i class="fa fa-arrow-circle-up scroll-to-top-icon" aria-hidden="true"></i></a> -->
 
-    
+    <section class="wide-section bg-contact">
+  <div class="grid-spaceBetween pad-top-s">
+    <div class="col-4_sm-12 bg-trans-white pad-all-s">
+      <h2>Address</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <h2>Phone</h2>
+      <p>
+        XXX-XXX-XXXX
+      </p>
+    </div>
+    <div class="col-7_sm-12 bg-trans-white pad-all-s">
+      <h2>Contact BeachCity Media</h2>
+
+      <form class="form" action="https://formspree.io/your@email.com" method="POST">
+
+        <p class="name">
+          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Your Name" id="name" />
+        </p>
+
+        <p class="company">
+          <input name="company" type="text" class="validate[custom[onlyLetter],length[0,100]] feedback-input" placeholder="Your Company/Organization" id="company" />
+        </p>
+
+        <p class="email">
+          <input name="_replyto" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Your Email" />
+        </p>
+
+        <p class="phone">
+          <input name="phone" type="text" class="validate[custom[phone]] feedback-input" id="phone" placeholder="Your Phone Number" />
+        </p>
+
+        <p class="text">
+          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+        </p>
+
+          <input type="submit" value="SEND" class="button"/>
+      </form>
+    </div>
+</section>
+<section>
+  <h2>Connect With Us</h2>
+  <p>
+    We're bringing together a global community of aspiring and inspiring entrepreneurs. Join the conversation and connect with us on social media.
+  </p>
+    <div class="grid-middle-spaceAround pad-left-m pad-top-s pad-right-m">
+    <a href="https://www.facebook.com/beachcitylife" target="blank" class="col-4_sm-6 pad-left-s pad-right-s"><img src="/images/facebook.png" alt="facebook logo"/></a>
+    <a href="https://www.youtube.com/channel/UCUJcvJL2L_0Js3-qLrIRE4g" target="blank" class="col-4_sm-6 pad-left-s pad-right-s"><img src="/images/youtube.png" alt="youtube logo"/></a>
+    <a href="https://twitter.com/beachcity_life" target="blank" class="col-4_sm-6 pad-left-s pad-right-s"><img src="/images/twitter.png" alt="twitter logo"/></a>
+    <a href="https://www.instagram.com/beach.city_life/" target="blank" class="col-4_sm-6 pad-left-s pad-right-s"><img src="/images/instagram.png" alt="instagram logo"/></a>
+    <a href="https://www.linkedin.com/company/beach-city/" target="blank" class="col-4_sm-6 pad-left-s pad-right-s"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
+  </div>
+
+</section>
+
     <footer class="bg-dark text-center">
   <div class="text-center pad-all-xs pad-top-s">
-    <a href="https://www.facebook.com/Beach-City-529685707197780/" target="blank"><i class="fa fa-facebook footer-icon pad-all-xs" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/Beach-City-529685707197780/" target="blank"><i class="fa fa-facebook-square footer-icon pad-all-xs" aria-hidden="true"></i></a>
+    <a href="https://www.youtube.com/channel/UCUJcvJL2L_0Js3-qLrIRE4g" target="blank"><i class="fa fa-youtube-square footer-icon pad-all-xs" aria-hidden="true"></i></a>
     <a href="https://www.linkedin.com/company/beach-city/" target="blank"><i class="fa fa-linkedin-square footer-icon pad-all-xs" aria-hidden="true"></i></a>
     </div>
   </div>
   <h6 class="pad-bottom-xs" style="margin: 0;"><i class="fa fa-copyright" aria-hidden="true"></i><script type="text/javascript">
-  document.write(new Date().getFullYear()); </script> BeachCity, All Rights Reserved.</h6>
+  document.write(new Date().getFullYear()); </script> BeachCity, All Rights Reserved. Created by CNX Web.</h6>
 </footer>
 
   </body>
