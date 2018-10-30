@@ -100,7 +100,7 @@ height: 100%;
 }
 @media all and (max-width:576px) {
   section {
-    padding: 7.5%;
+    padding: 15% 10%;
   }
 }
 
@@ -246,7 +246,7 @@ footer p {
   color: white;
   font-size: 1.5em;
   font-weight: 300;
-  padding: 5px 0 0 0;
+  padding: 3% 0;
   margin: 0;
 }
 footer h6, footer a {
@@ -264,6 +264,11 @@ footer a:hover, footer p:hover {
 }
 .bg-dark {
   background-color: #202b2f;
+}
+@media all and (max-width:576px) {
+  footer p {
+    padding: 8%;
+  }
 }
 /* landing page styles */
 .bg-office-above {
@@ -298,6 +303,16 @@ footer a:hover, footer p:hover {
   color: white;
   display: inline;
   padding: 0.3% 1%;
+}
+@media all and (max-width:768px) {
+  .bg-home {
+    min-height: 80vh;
+  }
+}
+@media all and (max-width:576px) {
+  .bg-home {
+    min-height: 50vh;
+  }
 }
 /* videos page */
 
@@ -336,7 +351,10 @@ footer a:hover, footer p:hover {
   /* min-height: 100vh; */
   overflow-y: hidden;
 }
-placeholder {
+.contact-container {
+  padding-top: 5%;
+}
+placeholder, input, textarea {
   color: rgba(32, 43, 47, 0.3);
   font-family: 'Montserrat', sans-serif;
 }
@@ -371,6 +389,23 @@ placeholder {
 .focused{
 	color:#202b2f;
 	border:#202b2f solid 3px;
+}
+
+@media all and (max-width:768px) {
+  .contact-container {
+    padding-top: 10%;
+  }
+  placeholder, input, textarea {
+    font-size: 1em;
+  }
+}
+@media all and (max-width:576px) {
+  .contact-container {
+    padding-top: 15%;
+  }
+  placeholder, input, textarea {
+    font-size: 0.8em;
+  }
 }
 
 /* Icons ---------------------------------- */
