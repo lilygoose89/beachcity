@@ -445,10 +445,10 @@ textarea {
 	line-height: 150%;
 }
 
-input:hover, textarea:hover,
+/* input:hover, textarea:hover,
 input:focus, textarea:focus {
 	background-color:white;
-}
+} */
 
 /* 404 */
 
