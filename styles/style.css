@@ -152,6 +152,9 @@ h5,h6 {
 .text-grey {
   color: #707070;
 }
+.text-dark {
+  color: #454545;
+}
 .text-bold {
   font-weight: bolder;
 }
@@ -248,6 +251,14 @@ nav a:hover {
   transform: scale(1.1);
 }
 /*  MOBILE MENU */
+.nav-mobile {
+  display: none;
+}
+@media all and (max-width:576px) {
+  .nav-mobile {
+    display: flex;
+  }
+}
 #mobile-menu {
   background-color: #07b2e5;
   font-size: 1.6em;
