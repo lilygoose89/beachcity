@@ -1,3 +1,4 @@
 /about-us/ /about
+/about/ /about.html
 /contact-us/ /contact
 https://info.beachcity.com.au/build-entrepreneurial-ecosystem https://beachcity.com.au/build-entrepreneurial-ecosystem
