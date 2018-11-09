@@ -222,6 +222,7 @@ nav {
   position: fixed;
   z-index: 99;
   width: 100%;
+  min-height: 45px;
 }
 #lp-nav {
   position: absolute;
