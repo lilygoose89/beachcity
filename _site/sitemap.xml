@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/video/live-in-menlo-park-silicon-valley-with-bill-reichert-garage-ventures</loc>
+<lastmod>2018-03-26T07:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/video/live-in-menlo-park-silicon-valley-with-bill-reichert-garage-ventures2</loc>
+<lastmod>2018-03-26T07:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/video/live-in-menlo-park-silicon-valley-with-bill-reichert-garage-ventures3</loc>
+<lastmod>2018-03-26T07:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/video/live-kickoff-from-boulder-colorado-startup-catalyst-mission</loc>
+<lastmod>2018-03-26T07:00:00+07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/all-videos.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/build-entrepreneurial-ecosystem.html</loc>

@@ -1,0 +1,21 @@
+---
+layout: default
+title:
+description:
+
+---
+<!-- this is the template for video archive pages, collections or tags will be shown below -->
+<h2>HELLO WORLD - CATEGORY</h2>
+<section>
+  <h1>Posts filed under '{{ page.title }}':</h1>
+  {% for post in page.posts %}
+  <div>
+    <h3>{{post.title}}</h3>
+    <h6 class="pad-top-xs">{{ post.date | date: "%b %-d, %Y" }}</h6>
+    <p>{{post.excerpt}}</p>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="col-2_sm-12 text-right"><button class="button">Read More</button></a>
+  </div>
+  {% endfor %}
+  <span class="hor-line"></span>
+  <a href="/all-video"><button>Go back to main video page</button></a>
+</section>

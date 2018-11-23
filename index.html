@@ -3,7 +3,7 @@ layout: default
 title: BeachCity Media
 description: BeachCity is reimaging entrepreneurship development. Let's inspire the new generation of founders, inventors and creatives through storytelling.
 keywords: beachcity, beachcitylife, beachcity media, beachcity video, beachcity social media, entrepreneurship, entrepreneur stories, startup stories, entrepreneurial lifestyle
-og-image: https://info.beachcity.com.au/images/presenter.jpg
+og-image: /images/presenter.jpg
 ---
 <header id="hero" class="bg-home">
   <div class="text-center pad-top-m">
@@ -26,9 +26,13 @@ og-image: https://info.beachcity.com.au/images/presenter.jpg
 </section>
 <section class="bg-trans-blue">
   <h2>Featured Story</h2>
-  <div class="video-container">
-    <iframe src="https://www.youtube-nocookie.com/embed/xst9S2u5AWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
+  {% for video in site.video limit:1 %}
+  {% if video.feature == true %}
+    <div class="video-container">
+      <iframe src="https://www.youtube-nocookie.com/embed/{{video.youtubeid}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  {% endif %}
+  {% endfor %}
   <div class="text-center">
     <p>
       Want more stories like this?

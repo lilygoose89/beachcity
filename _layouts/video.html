@@ -1,0 +1,40 @@
+---
+layout: default
+title:
+description:
+
+---
+<!-- this is the template for individual video pages, markdown content will be populated in the below areas -->
+<header class="bg-trans-blue video-header">
+    {% for video in page.video %}
+      <div class="video-container">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{video.youtubeid}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <h3>{{video.title}}</h3>
+      <h5>Published: {{video.date | date: "%b %-d, %Y"}}</h5>
+      <p>
+        {{video.description}}
+      </p>
+      <div>
+        <h5 class="margin-0">Filed Under:</h5>
+        {% for tags in video.tags %}
+        <p class="tags"><a href="/archives/tag/{{ tags | slugify }}" class="tag-a">{{tags}}</a></p>
+        {% endfor %}
+      </div>
+    {% endfor %}
+</header>
+<section>
+  <div class="pad-all-xs">
+    <h2>Related Videos</h2>
+    <div class="grid-spaceBetween">
+      {% for video in site.video limit:3 %}
+      {% if video.category == true %}
+        <div class="col-4">
+          <a href="{{video.url}}"><img src="{{video.og-image}}" alt="{{video.title}}"/></a>
+          <a href="{{video.url}}" class="video-link"><p>{{video.title}}</p></a>
+        </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

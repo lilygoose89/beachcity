@@ -1,0 +1,66 @@
+---
+layout: default
+title: Videos | BeachCity Media
+description: BeachCity, reimaging entrepreneurship development.
+keywords: beachcity, beachcitylife, beachcity media, beachcity video, beachcity social media,
+og-image:
+---
+<header class="bg-trans-blue video-header">
+    {% for video in site.video limit:1 %}
+    {% if video.featured == true %}
+      <div class="video-container">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{video.youtubeid}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <h3>{{video.title}}</h3>
+      <h5>Published: {{video.date | date: "%b %-d, %Y"}}</h5>
+      <p class="text-small">
+        {{video.description}}
+      </p>
+      <div>
+        <h5 class="margin-0">Filed Under:</h5>
+        {% for tags in video.tags %}
+        <p class="tags"><a href="/archives/tag/{{ tags | slugify }}" class="tag-a">{{tags}}</a></p>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% endfor %}
+    <span class="hor-line"></span>
+    <div class="pad-all-xs">
+      <h2>Other Featured Stories</h2>
+      <div class="grid-spaceBetween">
+        {% for video in site.video limit:3 offset:1 %}
+        {% if video.featured == true %}
+          <div class="col-4">
+            <a href="{{video.url}}"><img src="{{video.og-image}}" alt="{{video.title}}"/></a>
+            <a href="{{video.url}}" class="video-link"><p>{{video.title}}</p></a>
+          </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+</header>
+<section>
+  <h2>Story Collections</h2>
+  <p>
+    Check out our other recent interviews and explore our videos. We tell the stories of the world's brightest founders, mentors and investors, sharing behind the scenes insights and incredible lessons in entrepreneurship.
+  </p>
+
+  {% for category in site.category %}
+  <p><a href="/archives/category/{{ tags | slugify }}" class="tag-a">{{tags}}</a></p>
+  {% endfor %}
+
+
+
+
+  <a href=""><h3>Silicon Valley 2018</h3></a>
+  <div class="grid-spaceBetween">
+    {% for video in site.video limit:3 %}
+    {% if video.category == "Silicon Valley 2018" %}
+      <div class="col-4">
+        <a href="{{video.url}}"><img src="{{video.og-image}}" alt="{{video.title}}"/></a>
+        <a href="{{video.url}}" class="video-link"><p>{{video.title}}</p></a>
+      </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
