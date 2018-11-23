@@ -26,13 +26,16 @@ og-image: /images/presenter.jpg
 </section>
 <section class="bg-trans-blue">
   <h2>Featured Story</h2>
-  {% for video in site.video limit:1 %}
+  <!-- {% for video in site.video limit:1 %}
   {% if video.feature == true %}
     <div class="video-container">
       <iframe src="https://www.youtube-nocookie.com/embed/{{video.youtubeid}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   {% endif %}
-  {% endfor %}
+  {% endfor %} -->
+  <div class="video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/xst9S2u5AWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
   <div class="text-center">
     <p>
       Want more stories like this?
