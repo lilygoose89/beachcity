@@ -278,6 +278,9 @@ nav a:hover {
     display: flex;
   }
 }
+#mobile-nav {
+  z-index: 9999;
+}
 #mobile-menu {
   background-color: #07b2e5;
   font-size: 1.6em;
