@@ -660,11 +660,11 @@ input:focus, textarea:focus {
 
 /* "join the conversation" asia 2019 landing page styles */
 .bg-half-height-asia-2019 {
-  background: linear-gradient(rgba(6, 29, 92,0.4), rgba(6, 29, 92,0.4)), url('/images/phonevideo.jpg');
+  background: linear-gradient(rgba(24, 41, 45,0.4), rgba(24, 41, 45,0.4)), url('/images/phonevideo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 96vh;
+  height: 76vh;
   overflow-y: hidden;
 }
 .color-stripe-container {
@@ -673,6 +673,10 @@ input:focus, textarea:focus {
 .color-stripe {
   max-width: 300px;
   height: 4vh;
+}
+.big-icon {
+  width: auto;
+  max-height: 30vh;
 }
 
 /* helpers ----------------------------------------- */
