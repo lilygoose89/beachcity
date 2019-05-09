@@ -29,6 +29,24 @@ section {
 .bg-white {
   background-color: white;
 }
+.bg-cyan {
+  background-color: #1dafed;
+}
+.bg-teal {
+  background-color: #6be2e3
+}
+.bg-turquoise {
+  background-color: #7cbbaa
+}
+.bg-yellow {
+  background-color: #ebe052
+}
+.bg-orange{
+  background-color: #f28342
+}
+.bg-red{
+  background-color: #b6323c
+}
 .bg-trans-blue {
   background-color: rgba(6, 29, 92,0.2)
 }
@@ -276,6 +294,11 @@ nav p , nav a{
 }
 nav a:hover {
   transform: scale(1.1);
+}
+.logo-container {
+  max-width: 450px;
+  padding-top: 5%;
+  padding-left: 8%;
 }
 /*  MOBILE MENU */
 .nav-mobile {
@@ -626,13 +649,30 @@ input:focus, textarea:focus {
   overflow-y: hidden;
 }
 /* job page styles */
-.bg-half-height {
+.bg-half-height-job {
   background: linear-gradient(rgba(6, 29, 92,0.4), rgba(6, 29, 92,0.4)), url('/images/presenter.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 60vh;
   overflow-y: hidden;
+}
+
+/* "join the conversation" asia 2019 landing page styles */
+.bg-half-height-asia-2019 {
+  background: linear-gradient(rgba(6, 29, 92,0.4), rgba(6, 29, 92,0.4)), url('/images/phonevideo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 96vh;
+  overflow-y: hidden;
+}
+.color-stripe-container {
+
+}
+.color-stripe {
+  max-width: 300px;
+  height: 4vh;
 }
 
 /* helpers ----------------------------------------- */
