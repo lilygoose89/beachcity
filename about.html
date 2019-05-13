@@ -3,7 +3,7 @@ layout: default
 title: About BeachCity Media
 description: BeachCity is a motley crew of seasoned tech entrepreneurs, video storytellers, and young media personalities. Together, we create and deliver "edutainment" style content and social media to spotlight entrepreneurship and innovation.
 keywords: media production, video storytellers, entrepreneurs, spotlight innovation, leigh kelson, wayne kelson, lily bruns, macca reardon, chris hogan, nicklas bergman
-og-image: https://info.beachcity.com.au/images/BeachCity-Media-Collage.jpg
+og-image: https://info.beachcity.com.au/images/startmeuphk.jpg
 team:
   - name: Leigh Kelson
     title: Founder, CEO & Chief Storyteller
@@ -40,6 +40,14 @@ team:
     <h3 class="text-white editable">BeachCity is a motley crew of seasoned tech entrepreneurs, talented video storytellers, and young media personalities. Together, we create and deliver light "edutainment" style content and social media to spotlight entrepreneurship and innovation. </h3>
   </div>
 </header>
+<div class="color-stripes-container grid-noGutter">
+  <span class="col-2 color-stripe bg-cyan"></span>
+  <span class="col-2 color-stripe bg-turquoise"></span>
+  <span class="col-2 color-stripe bg-teal"></span>
+  <span class="col-2 color-stripe bg-yellow"></span>
+  <span class="col-2 color-stripe bg-orange"></span>
+  <span class="col-2 color-stripe bg-red"></span>
+</div>
 <section>
   <h2 class="editable">Our Mission</h2>
   <p class="editable">
@@ -48,7 +56,7 @@ team:
 </section>
 <section>
   <h2 class="editable">Our Team</h2>
-  <div class="grid-spaceBetween">
+  <div class="grid-spaceAround">
     {% for team in page.team limit:5 %}
     <div class="col-4_md-6_sm-12 text-center">
       <h3>{{team.name}}</h3>
@@ -60,9 +68,9 @@ team:
     </div>
     {% endfor %}
   </div>
-  <div class="grid-spaceBetween">
+  <div class="grid-spaceAround">
     {% for team in page.team offset:5 limit:2 %}
-    <div class="col-6_sm-12">
+    <div class="col-4_sm-12 text-center">
       <h3>{{team.name}}</h3>
       <h4>{{team.title}}</h4>
       <p class="text-small">
