@@ -457,6 +457,9 @@ footer a:hover, footer p:hover {
   .heading-home {
     font-size: 4em;
   }
+  .event-icon {
+    padding: 3%;
+  }
 }
 @media all and (max-width:576px) {
   .bg-home {
@@ -464,9 +467,6 @@ footer a:hover, footer p:hover {
   }
   .heading-home {
     font-size: 2.5em;
-  }
-  .event-icon {
-    padding: 1%;
   }
 }
 .color-stripes-container {
