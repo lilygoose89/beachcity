@@ -712,7 +712,7 @@ input:focus, textarea:focus {
   background: linear-gradient(rgba(24, 41, 45,0.4), rgba(24, 41, 45,0.4)), url('/images/adelaide.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: 70vh;
   overflow-y: hidden;
 }
