@@ -1,10 +1,10 @@
-collections:
-  lps:
-    output: true
-    permalink: /:collection/:name
-  video:
-    output: true
-    permalink: /:collection/:name
+# collections:
+#   lps:
+#     output: true
+#     permalink: /:collection/:name
+#   video:
+#     output: true
+#     permalink: /:collection/:name
 
 url: "https://beachcity.com.au" # the base hostname & protocol for your site
 
