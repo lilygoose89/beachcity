@@ -703,7 +703,7 @@ input:focus, textarea:focus {
   background: linear-gradient(rgba(24, 41, 45,0.1), rgba(24, 41, 45,0.3)), url('/images/puzzle.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   min-height: 100vh;
   overflow-y: hidden;
 }
