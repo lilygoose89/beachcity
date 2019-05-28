@@ -709,7 +709,7 @@ input:focus, textarea:focus {
 }
 /* job page styles */
 .bg-half-height-job {
-  background: linear-gradient(rgba(24, 41, 45,0.4), rgba(24, 41, 45,0.4)), url('/images/presenter.jpg');
+  background: linear-gradient(rgba(24, 41, 45,0.4), rgba(24, 41, 45,0.4)), url('/images/adelaide.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
