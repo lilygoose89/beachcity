@@ -4,4 +4,5 @@
 /shows /all-videos
 https://info.beachcity.com.au/build-entrepreneurial-ecosystem https://beachcity.com.au/build-entrepreneurial-ecosystem
 /job-2019-bangkok /jobs/job-2019-bangkok
+/jobs/job-2019-bangkok /jobs/job-2019-bangkok.html
 /job-2018-correspondant-hong-kong.html /jobs/job-2018-correspondant-hong-kong.html
