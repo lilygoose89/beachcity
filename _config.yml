@@ -1,8 +1,5 @@
 # collections:
-#   lps:
-#     output: true
-#     permalink: /:collection/:name
-#   video:
+#   jobs:
 #     output: true
 #     permalink: /:collection/:name
 
