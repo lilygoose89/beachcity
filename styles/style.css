@@ -342,6 +342,12 @@ nav p , nav a{
 .nav-mobile {
   display: none;
 }
+@media all and (max-width:1024px) {
+
+}
+@media all and (max-width:768px) {
+
+}
 @media all and (max-width:576px) {
   .nav-mobile {
     display: flex;
